@@ -1,0 +1,39 @@
+
+icetime topological timing analysis report
+==========================================
+
+Info: max_span_hack is enabled: estimate is conservative.
+
+Report for critical path:
+-------------------------
+
+        lc40_11_19_1 (LogicCell40) [clk] -> lcout: 0.896 ns
+     0.896 ns net_42420 (blink_counter[25])
+        odrv_11_19_42420_26916 (Odrv12) I -> O: 0.796 ns
+        t77 (LocalMux) I -> O: 0.486 ns
+        inmux_12_19_50627_50666 (InMux) I -> O: 0.382 ns
+        lc40_12_19_3 (LogicCell40) in1 -> lcout: 0.589 ns
+     3.149 ns net_46499 ($abc$425$new_n11_)
+        t80 (LocalMux) I -> O: 0.486 ns
+        inmux_12_19_50617_50684 (InMux) I -> O: 0.382 ns
+        lc40_12_19_6 (LogicCell40) in1 -> lcout: 0.589 ns
+     4.607 ns net_46502 (LED$2)
+        odrv_12_19_46502_49969 (Odrv12) I -> O: 0.796 ns
+        t86 (Span12Mux_h12) I -> O: 0.796 ns
+        t85 (Sp12to4) I -> O: 0.662 ns
+        t84 (Span4Mux_v4) I -> O: 0.548 ns
+        t83 (Span4Mux_v4) I -> O: 0.548 ns
+        t82 (LocalMux) I -> O: 0.486 ns
+        inmux_5_33_24484_24477 (IoInMux) I -> O: 0.382 ns
+     8.824 ns net_24477 (LED$2)
+        pre_io_5_33_1 (PRE_IO) DOUT0 [setup]: 0.103 ns
+     8.928 ns io_pad_5_33_1_din
+
+Resolvable net names on path:
+     0.896 ns ..  2.560 ns blink_counter[25]
+     3.149 ns ..  4.018 ns $abc$425$new_n11_
+     4.607 ns ..  8.824 ns LED$2
+
+Total number of logic levels: 3
+Total path delay: 8.93 ns (112.01 MHz)
+
